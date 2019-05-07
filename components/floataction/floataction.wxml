@@ -1,0 +1,4 @@
+<!-- 首页按钮组件 -->
+<view class="float-action">
+  <slot></slot>
+</view>

@@ -1,0 +1,15 @@
+Component({
+  //注册组件
+  properties:{
+    dataSource:{
+      type:Array
+    }
+  },
+  methods:{
+    onTap(e){
+      this.triggerEvent('click',{
+        data:e.currentTarget.dataset.item
+      })
+    }
+  }
+})

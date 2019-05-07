@@ -1,0 +1,18 @@
+<view class="comment-list">
+  <block wx:for="{{dataSource}}" wx:if="{{dataSource}}" wx:key="id">
+    <view class="comment-item">
+      <view class="content">
+        <view class="header">
+          <text class="author">{{item.author}}</text>
+          <view class="vote">
+            <image src="{{voteSrc}}"></image>
+            <text>{{item.likes}}</text>
+          </view>
+        </view>
+        <text class="body">{{item.content}}</text>
+        <text class="bottom">{{item.time}}</text>
+      </view>
+      <image class="avatar" src="{{item.avatar}}"></image>
+    </view>
+  </block>
+</view>

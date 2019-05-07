@@ -1,0 +1,7 @@
+<!-- 用户页面组件 -->
+<!-- 全屏遮罩 -->
+<view class="shadow" style="display:{{shadowDisplay}}" bindtap="clickShadow"></view>
+<!-- 用户信息菜单 -->
+<view class="user-menu" style="right:{{userRight}}px;width:{{userWidth}}px;height:{{userHeight}}px" animation="{{animation}}">
+  <slot></slot>
+</view>

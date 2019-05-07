@@ -1,0 +1,52 @@
+/* 用户页面样式 */
+.user-head{
+  background:#019dd6;
+  height:200rpx;
+  color:#fff;
+  padding:20rpx 40rpx 0 40rpx;
+}
+.user-info{
+  height:80rpx;
+  display:flex;
+  line-height:80rpx;
+  overflow:hidden;
+}
+.user-info .user-avatar{
+  width:80rpx;
+  height:80rpx;
+  margin-right:40rpx;
+}
+.user-tool{
+  height:100rpx;
+  padding-top:25rpx;
+  padding-left:10rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-tool .tool-item{
+  display: flex;
+  align-items: center;
+}
+.user-tool .tool-item image{
+  width:50rpx;
+  height:50rpx;
+  margin-right:20rpx;
+}
+.user-tool .tool-item text{
+  font-size:32rpx;
+}
+.user-items .item{
+  display:flex;
+  align-items: center;
+  height:100rpx;
+  color:#019dd6;
+  background: rgba(0, 0, 0,0.1);
+  padding:0 40rpx;
+  font-size:35rpx;
+}
+.user-items image{
+  width:50rpx;
+  height:50rpx;
+  margin-right:25rpx;
+}

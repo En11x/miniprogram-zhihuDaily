@@ -1,0 +1,63 @@
+.comment-list .comment-item{
+  position:relative;
+  min-height:150rpx;
+  overflow: hidden;
+  padding:60rpx 15rpx 40rpx 15rpx;
+  border-bottom:1px solid #eee;
+}
+.comment-list .comment-item:active{
+  background:#fafafa;
+}
+
+.comment-list .comment-item .avatar{
+  position:absolute;
+  width:100rpx;
+  height:100rpx;
+  top:40rpx;
+  left:20rpx;
+  border-radius:50%;
+}
+.comment-list .comment-item .content{
+  margin-left:140rpx;
+  margin-right: 20rpx;
+}
+.comment-item .content text{
+  font-size: 35rpx;
+}
+.comment-item .content .header{
+  position: relative;
+}
+.content .header .vote{
+  position:absolute;
+  width:80rpx;
+  top:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .header .author{
+  font-weight: bold;
+}
+.header .vote image{
+  width:40rpx;
+  height:40rpx;
+}
+.header .vote text{
+  color:#AAA;
+  font-size: 35rpx;
+}
+
+.comment-item .content .body{
+  display: block;
+  margin-top:20rpx;
+  color:#333;
+  line-height: 45rpx;
+  text-align: justify;
+}
+.comment-item .content .bottom{
+  display: block;
+  font-size: 30rpx;
+  margin-top:20rpx;
+  color:#ccc;
+}

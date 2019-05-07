@@ -1,0 +1,11 @@
+<!-- 评论页面 -->
+<view class="container">
+  <view class="comment">
+    <text>{{longCommentCount}}条长评</text>
+  </view>
+  <clist wx:if="{{longComment}}" dataSource="{{longComment}}" bindclickLike="longClickLike" voteSrc="{{voteSrc}}"></clist>
+  <view class="comment" bindtap="laodShortComments">
+    <text>{{shortCommentCount}}条短评</text>
+  </view>
+  <clist wx:if="{{shortComment}}" dataSource="{{shortComment}}" bindclickLike="shortClickLike" voteSrc="{{voteSrc}}"></clist>
+</view>

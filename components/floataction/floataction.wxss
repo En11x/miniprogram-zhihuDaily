@@ -1,0 +1,15 @@
+.float-action{
+  position: fixed;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+  bottom:40rpx;
+  right:60rpx;
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  background:#1891d4;
+  box-shadow: 2px 2px 10px #aaa;
+  opacity:0.8;
+  z-index:900;
+}

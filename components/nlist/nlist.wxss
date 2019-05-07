@@ -1,0 +1,33 @@
+.list-item{
+  position: relative;
+  min-height:150rpx;
+  width:90%;
+  overflow: hidden;
+  margin: 30rpx 2%;
+  padding:10px;
+  border:1px solid #EFEFEF;
+  box-shadow: 0 1px 1px #ccc;
+}
+.list-item:active{
+  background:#fafafa;
+}
+.list-item image{
+  position:absolute;
+  width:150rpx;
+  height:150rpx;
+  left:10px;
+  top:10px;
+}
+
+.content{
+  margin-left:180rpx;
+}
+.content text{
+  font-size:35rpx;
+}
+.spliter{
+  font-size: 30rpx;
+  background: #eee;
+  color:#555;
+  padding: 20rpx;
+}

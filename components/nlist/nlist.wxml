@@ -1,0 +1,14 @@
+<!-- 日报列表组件 -->
+<view class="news-list">
+  <block wx:for="{{dataSource}}" wx:key="index">
+    <view class="list-item" wx:if="{{!item.isLabel}}" bindtap="onTap" bindlongpress="onLongPress" data-item="{{item}}">
+      <view class="content">
+        <text>{{item.title}}</text>
+      </view>
+       <image src="{{item.image}}"></image>
+    </view>
+    <view class="spliter" wx:else>
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+</view>

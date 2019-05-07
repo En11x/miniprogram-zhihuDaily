@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "floataction":"/components/floataction/floataction",
+    "user": "/components/user/user",
+    "slider": "/components/slider/slider",
+    "nlist": "/components/nlist/nlist"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"light",
+  "backgroundColor":"#ccc"
+}

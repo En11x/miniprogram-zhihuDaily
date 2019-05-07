@@ -1,0 +1,29 @@
+.index-swiper{
+  position:relative;
+  height:450rpx;
+}
+.mask{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.index-swiper image{
+  display: block;
+  width:100%;
+}
+.desc{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:20rpx 20rpx 50rpx 20rpx;
+  width:100%;
+  background: rgba(0, 0, 0, 0.3);
+  color:#fff;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+.setting-header{
+  margin:40rpx 40rpx 20rpx 40rpx;
+  font-size:30rpx;
+  color:#1891d4;
+}
+.setting-item:active{
+  background:#fafafa;
+}
+.setting-item .content{
+  position:relative;
+  padding:20rpx 0;
+  margin:0 40rpx;
+  border-bottom:1px solid #eee;
+}
+.setting-item .checker{
+  position:absolute;
+  top:20rpx;
+  right:0;
+}
+.setting-item .title,.setting-item .desc{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.setting-item .title{
+  font-size:35rpx;
+}
+.setting-item .desc{
+  font-size:30rpx;
+  color:#aaa;
+  margin-top:20rpx;
+}

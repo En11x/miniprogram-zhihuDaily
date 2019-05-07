@@ -1,0 +1,41 @@
+<!-- 首页 -->
+
+<!-- 使用组件 菜单按钮 -->
+<floataction bindtap="ballClickEvent" id="floataction">
+  <image wx:if="{{isUserShow}}" src="/images/-cancel-.png" style="display:inline;width:32rpx;height:32rpx"></image>
+  <image wx:else src="/images/-menu.png" style="display:inline;width:32rpx;height:32rpx"></image> 
+</floataction>
+
+<!-- 使用组件--user -->
+<user id="user" class="user" bindtoggle="onUserChange">
+  <view class="user-head">
+    <view class="user-info">
+      <open-data type="userAvatarUrl" class="user-avatar"></open-data>
+      <open-data type="userNickName" class="user-name"></open-data>
+    </view>
+    <view class="user-tool">
+      <view class="tool-item" bindtap="toFavoritePage">
+        <image src="/images/shoucang.png"></image>
+        <text>我的收藏</text>
+      </view>
+      <view class="tool-item" bindtap="toSettingPage">
+        <image src="/images/shezhi.png"></image>
+        <text>设置</text>
+      </view>
+    </view>
+  </view>
+  <view class="user-items">
+    <view class="item home" bindtap="toHomePage">
+      <image src="/images/home.png"></image>
+      <text>首页</text>
+    </view>
+  </view>
+</user>
+
+<scroll-view scroll-y="true" style="height:100%;width:100%" bindscrolltolower="loadMoreNews">
+  <!-- 轮播图组件 -->
+  <slider style="margin:0" dataSource="{{sliderData}}" bindclick="toDetailPage"></slider>
+
+  <!-- 文章列表组件 -->
+  <nlist dataSource="{{newsData}}" bindclick="toDetailPage"></nlist>
+</scroll-view> 

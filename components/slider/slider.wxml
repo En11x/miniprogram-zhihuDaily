@@ -1,0 +1,10 @@
+<!-- 轮播图组件 -->
+<swiper class="index-swiper" indicator-dots="true" autoplay="true" interval="10000">
+  <block wx:for="{{dataSource}}" wx:key="id">
+    <swiper-item>
+      <image mode="aspectFill" src="{{item.image}}" class="slide-image"/>
+      <view class="mask" bindtap="onTap" data-item="{{item}}"></view>
+      <text class="desc">{{item.title}}</text>
+    </swiper-item>
+  </block>
+</swiper>
